@@ -17,13 +17,11 @@ class CalculationsTest {
         assertEquals("maslo",calculations.get(0).getName());
     }
     @Test
-    void getNonExtist() throws ProductNoExistException {
+    void getNonExist() throws ProductNoExistException {
         Calculations calculations = new Calculations();
         calculations.add(new Product("maslo", BigDecimal.TEN));
 
         assertEquals("maslo",calculations.get(1).getName());
     }
-    @Test
-    void get() {
-    }
+
 }
